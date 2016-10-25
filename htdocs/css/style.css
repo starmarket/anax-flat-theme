@@ -713,6 +713,15 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  */
 .site-header {
   height: 80px;
+  width: 100%;
+  overflow: hidden;
+  background-image: linear-gradient(#ddd, white);
+}
+.navbar2 li {
+  background-color: #ddd;
+}
+.navbar2 li a {
+  background-image: linear-gradient(#ddd, white);
 }
 .site-logo-text,
 .navbar2,
@@ -772,4 +781,38 @@ img {
   .navbar2 {
     display: none;
   }
+}
+/*
+ * Main content
+ */
+.article {
+  margin: 1em;
+}
+.article img {
+  float: right;
+}
+.article h1 {
+  font-family: sans-serif;
+}
+.wrap-all {
+  background-color: white;
+}
+body {
+  background-color: #ddd;
+}
+/*
+ * Byline
+ */
+.byline img {
+  width: 80px;
+  float: left;
+}
+/*
+ * Footer
+ */
+.site-footer {
+  background-image: linear-gradient(white, #ddd);
+}
+.columns {
+  margin: 1em;
 }

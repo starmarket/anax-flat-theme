@@ -10,6 +10,28 @@
 
 .site-header {
     height: 80px;
+    width: 100%;
+    // margin: 1em;
+    overflow:hidden;
+    // border-bottom: 1px solid #ddd;
+    background-image:
+        linear-gradient(
+            #ddd, white
+    );
+
+}
+
+
+.navbar2 {
+    li {
+        background-color: #ddd;
+        a {
+            background-image:
+                linear-gradient(
+                    #ddd, white
+            );
+        }
+    }
 }
 
 .site-logo-text,
@@ -101,4 +123,52 @@ img {
     .navbar2 {
         display: none;
     }
+}
+
+
+/*
+ * Main content
+ */
+.article {
+    img {
+        float: right;
+    }
+
+    h1 {
+        font-family: sans-serif;
+    }
+
+    margin: 1em;
+}
+
+.wrap-all {
+    background-color: white;
+}
+
+body {
+    background-color: #ddd;
+}
+
+/*
+ * Byline
+ */
+
+.byline img {
+    width: 80px;
+    float: left;
+}
+
+/*
+ * Footer
+ */
+
+.site-footer {
+    background-image:
+        linear-gradient(
+            white, #ddd
+    );
+}
+
+.columns {
+    margin: 1em;
 }
