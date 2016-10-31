@@ -715,26 +715,36 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   height: 80px;
   width: 100%;
   overflow: hidden;
-  background-image: linear-gradient(#ddd, white);
 }
 .navbar2 li {
-  background-color: #ddd;
+  background-color: white;
 }
 .navbar2 li a {
-  background-image: linear-gradient(#ddd, white);
+  background-color: white;
+  font-size: 0.8em;
+}
+.navbar2 {
+  float: right;
+  width: 30%;
 }
 .site-logo-text,
-.navbar2,
 .profile {
   float: left;
   width: 30%;
 }
 .site-logo-text {
   font-size: 2em;
+  margin-top: 0.3em;
 }
 .site-logo-text a {
   text-decoration: none;
   color: #222;
+}
+.rm-desktop li {
+  background-color: white;
+}
+.rm-max .rm-small .rm-button {
+  font-size: 1.5em;
 }
 /** --------------------------------------------------------------
  *  Logo images
@@ -798,7 +808,7 @@ img {
   background-color: white;
 }
 body {
-  background-color: #ddd;
+  background-color: white;
 }
 /*
  * Byline
@@ -807,12 +817,16 @@ body {
   width: 80px;
   float: left;
 }
-/*
- * Footer
- */
-.site-footer {
-  background-image: linear-gradient(white, #ddd);
-}
 .columns {
   margin: 1em;
+}
+.footer {
+  width: 100%;
+  border-top: 1px solid black;
+}
+.outer-wrap-footer {
+  width: 100%;
+}
+.byline-text {
+  margin-left: 1em;
 }
