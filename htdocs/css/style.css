@@ -415,73 +415,6 @@ template {
   display: none;
 }
 /**
- * Regions, basics to show off the regions.
- */
-.wrap-all {
-  margin: 0 auto;
-  max-width: 950px;
-}
-.footer-column {
-  float: left;
-  width: 33%;
-}
-.footer-column-wrapper {
-  overflow: auto;
-}
-.sidebar {
-  width: 33%;
-  float: left;
-}
-.main .has-sidebar {
-  width: 67%;
-  float: left;
-}
-.outer-wrap-footer {
-  clear: both;
-  margin-bottom: 22px;
-}
-.site-footer {
-  text-align: center;
-}
-.site-footer ul {
-  margin: 0;
-  padding: 0;
-  list-type: none;
-}
-.site-footer li {
-  display: inline;
-}
-.footer-column ul {
-  margin: 0;
-  padding: 1em;
-  list-style-type: circle;
-}
-.next-previous .next,
-.next-previous .previous {
-  width: 50%;
-}
-.next-previous .next {
-  float: right;
-  text-align: right;
-}
-.breadcrumb {
-  margin-bottom: 22px;
-}
-.breadcrumb ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-.breadcrumb li {
-  display: inline;
-}
-.breadcrumb li::after {
-  content: " » ";
-}
-.site-header {
-  position: relative;
-}
-/**
  * Style for responsive menu
  */
 /**
@@ -708,6 +641,152 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 .rm-max.rm-swipe-right .rm-mobile {
   right: 0;
 }
+/**
+ * Responsive Grid
+ */
+/**
+ * A small clearfix:
+ * http://stackoverflow.com/questions/211383/what-methods-of-clearfix-can-i-use
+ */
+/**
+ * Wrap grid in a container.
+ */
+/**
+ * All columns must be wrapped in a row.
+ */
+/**
+ * Create a column spanning @col columns.
+ */
+/**
+ * Push a column @offset columns.
+ */
+/**
+ * Pull a column left @offset columns.
+ */
+/**
+ * Pull a column right @offset columns.
+ */
+/**
+ * Show grid.
+ */
+.default {
+  background-color: #ddd;
+  padding-bottom: 0;
+}
+body.route-grid .wrap-all {
+  background: url(../img/grid/grid960x24x30x10.png) repeat-y fixed center center;
+  background-size: 100% auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960;
+}
+@media (min-width: 960) {
+  body.route-grid .wrap-all {
+    background-size: 960 auto;
+  }
+}
+.row {
+  display: block;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.main {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.article {
+  margin: 0;
+  paddin: 0;
+}
+.article img {
+  margin-right: -0.5em;
+}
+.byline {
+  padding: 0;
+}
+.footer-column {
+  width: 33%;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+}
+.footer {
+  width: 100%;
+}
+.inner-wrap-footer {
+  background-color: #ddd;
+  margin-bottom: 0;
+}
+.outer-wrap-footer {
+  margin-bottom: 0;
+}
+.site-footer {
+  text-align: center;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+a {
+  color: black;
+}
+a:visited {
+  color: black;
+}
+.breadcrumb {
+  margin-bottom: 24px;
+}
+.breadcrumb ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.breadcrumb li {
+  display: inline;
+}
+.breadcrumb li::after {
+  content: " » ";
+}
+.next-previous .next,
+.next-previous .previous {
+  width: 50%;
+}
+.next-previous .next {
+  float: right;
+  text-align: right;
+}
+.breadcrumb-wrap {
+  margin-bottom: 22px;
+}
+.breadcrumb-wrap ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.breadcrumb-wrap li {
+  display: inline;
+}
+.breadcrumb-wrap li::after {
+  content: " » ";
+}
+.sidebar {
+  width: 32%;
+  float: left;
+  margin-bottom: 1em;
+}
+.has-sidebar {
+  min-height: 15em;
+}
+.article-block {
+  display: inline-block;
+  width: 60%;
+}
+.right-block {
+  width: 23.5%;
+}
 /** --------------------------------------------------------------
  *  header
  */
@@ -720,6 +799,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   background-color: white;
 }
 .navbar2 li a {
+  padding-right: 0;
   background-color: white;
   font-size: 0.8em;
 }
@@ -742,9 +822,22 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 }
 .rm-desktop li {
   background-color: white;
+  float: right;
 }
 .rm-max .rm-small .rm-button {
   font-size: 1.5em;
+  margin-right: 72px;
+  margin-top: 0;
+}
+.rm-mobile a {
+  color: white;
+}
+.fa {
+  margin: 0;
+}
+.rm-small li {
+  margin: 0;
+  padding: 0;
 }
 /** --------------------------------------------------------------
  *  Logo images
@@ -795,14 +888,12 @@ img {
 /*
  * Main content
  */
-.article {
-  margin: 1em;
-}
 .article img {
   float: right;
 }
 .article h1 {
   font-family: sans-serif;
+  font-size: 32px;
 }
 .wrap-all {
   background-color: white;
@@ -816,13 +907,14 @@ body {
 .byline img {
   width: 80px;
   float: left;
+  margin-right: 16px;
+  margin-left: -1em;
 }
 .columns {
   margin: 1em;
 }
 .footer {
   width: 100%;
-  border-top: 1px solid black;
 }
 .outer-wrap-footer {
   width: 100%;
