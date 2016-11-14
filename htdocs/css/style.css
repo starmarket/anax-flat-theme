@@ -669,25 +669,298 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 /**
  * Show grid.
  */
-.default {
-  background-color: #ddd;
-  padding-bottom: 0;
-}
 body.route-grid .wrap-all {
   background: url(../img/grid/grid960x24x30x10.png) repeat-y fixed center center;
   background-size: 100% auto;
   margin-left: auto;
   margin-right: auto;
-  max-width: 960;
+  max-width: 960px;
 }
-@media (min-width: 960) {
+@media (min-width: 960px) {
   body.route-grid .wrap-all {
-    background-size: 960 auto;
+    background-size: 960px auto;
   }
 }
-.row {
+body.route-typography .main {
+  background-image: url(../img/grid/horisontal-grid-24.png);
+}
+body {
+  font: 100.01%/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-family: MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;
+  margin-top: 56px;
+  margin-bottom: 24px;
+}
+body h1 img,
+body h2 img,
+body h3 img,
+body h4 img,
+body h5 img,
+body h6 img {
+  margin: 0;
+}
+body h1 {
+  font-size: 2.375em;
+  line-height: 1.26315789;
+  font-weight: normal;
+  border-bottom: 1px solid #666;
+  margin-bottom: 23px;
+}
+body h1 ~ h1,
+body h1 ~ h2,
+body h1 ~ h3,
+body h1 ~ h4,
+body h1 ~ h5,
+body h1 ~ h6 {
+  margin-top: 24px;
+}
+body h1 + h2 {
+  margin-top: 24px;
+}
+body h2 {
+  font-size: 1.875em;
+  line-height: 1.6;
+  font-weight: normal;
+  margin-top: 48px;
+  margin-bottom: 23px;
+  border-bottom: 1px solid #999;
+}
+body h2 + h3 {
+  margin-top: 24px;
+}
+body h3 {
+  font-size: 1.375em;
+  line-height: 1.09090909;
+  font-weight: normal;
+}
+body h4 {
+  font-size: 1.25em;
+  line-height: 1.2;
+  font-weight: normal;
+}
+body h5 {
+  font-size: 1em;
+  line-height: 1.5;
+}
+body h6 {
+  font-size: 0.875em;
+  line-height: 1.71428571;
+}
+body p {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+body small,
+body .small,
+body .smaller {
+  font-size: 0.875em;
+}
+body strong,
+body b {
+  font-weight: bold;
+}
+body mark {
+  color: #000;
+  background-color: #ffff99;
+}
+body abbr[title],
+body dfn[title] {
+  text-decoration: dotted underline;
+}
+body em,
+body i,
+body dfn {
+  font-style: italic;
+}
+body sub,
+body sup {
+  font-size: 0.75em;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+body sup {
+  top: -0.5em;
+}
+body sub {
+  bottom: -0.25em;
+}
+body blockquote {
+  border-left: 4px solid #eee;
+  padding-left: 1em;
+  margin-left: 0;
+  margin-bottom: 24px;
+}
+body pre,
+body code,
+body kbd,
+body samp,
+body .code {
+  font-size: 1.25em;
+  font-family: monospace;
+}
+body code,
+body samp {
+  border: 1px solid #ccc;
+}
+body code {
+  background-color: #eee;
+}
+body pre,
+body div.code,
+body pre code {
+  font-size: 1.04166667em;
+  line-height: 1.6;
+  white-space: pre;
+}
+body pre {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+body pre code {
   display: block;
-  max-width: 1000px;
+  overflow: auto;
+}
+body div.code,
+body pre code {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-top: 23px;
+  margin-bottom: 23px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 0.5em;
+  background-color: #eee;
+}
+body ul,
+body ol {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding-left: 1.5em;
+}
+body ul p,
+body ol p {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+body ul ul,
+body ol ul,
+body ul ol,
+body ol ol {
+  margin: 0;
+}
+body ul {
+  list-style-type: disc;
+}
+body ol {
+  list-style-type: decimal;
+}
+body dl {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+body dl.horizontal dt {
+  clear: left;
+  float: left;
+  width: 7em;
+}
+body dl.horizontal dd {
+  margin-left: 8em;
+  display: block;
+}
+body dd {
+  margin-left: 1.5em;
+}
+body article table,
+body .table,
+body .table1,
+body .table2 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+body table.full-width,
+body article .table,
+body .table,
+body .table2 {
+  width: 100%;
+}
+body article table,
+body .table,
+body .table2 {
+  border-collapse: collapse;
+  margin-top: 43.2px;
+}
+body article table caption,
+body .table caption,
+body .table2 caption {
+  font-size: 0.875em;
+  line-height: 1.71428571;
+  text-align: left;
+  font-style: italic;
+}
+body article table thead,
+body .table thead,
+body .table2 thead {
+  box-shadow: 0 1px 0 #aaa;
+}
+body article table th,
+body .table th,
+body .table2 th {
+  vertical-align: bottom;
+  font-weight: bold;
+  text-align: left;
+}
+body article table th,
+body .table th,
+body .table2 th,
+body article table td,
+body .table td,
+body .table2 td {
+  padding: 12px;
+}
+body article table tr,
+body .table tr,
+body .table2 tr {
+  box-shadow: 0 1px 0 #ccc;
+}
+body article table tr:hover,
+body .table tr:hover,
+body .table2 tr:hover {
+  color: #000;
+  background-color: #f6f6f6;
+  box-shadow: 0 1px 0 #666;
+}
+body table.striped tbody tr:nth-child(even) td,
+body table.striped tbody tr.even td {
+  background-color: #fafafa;
+}
+body hr {
+  position: relative;
+  top: -2px;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  margin-top: 24px;
+  margin-bottom: 36px -12px;
+}
+body hr:after {
+  position: relative;
+  top: -0.7em;
+  left: 50%;
+  padding: 0 0.25em;
+  background-color: #fff;
+}
+.route-report .article {
+  min-height: 20em;
+}
+.wrap-all {
+  max-width: 960px;
   margin: 0 auto;
 }
 .main {
@@ -695,31 +968,31 @@ body.route-grid .wrap-all {
   padding: 0;
   overflow: hidden;
 }
+.flash-wrap img {
+  display: block;
+  margin: 0 auto;
+}
 .article {
-  margin: 0;
-  paddin: 0;
+  margin: 3.7%;
+  min-height: 10em;
 }
 .article img {
-  margin-right: -0.5em;
+  margin-top: 1em;
 }
-.byline {
-  padding: 0;
+.byline p img {
+  margin-left: 2.1%;
 }
 .footer-column {
   width: 33%;
   display: inline-block;
-  margin: 0 auto;
   text-align: center;
 }
 .footer {
   width: 100%;
 }
 .inner-wrap-footer {
-  background-color: #ddd;
-  margin-bottom: 0;
-}
-.outer-wrap-footer {
-  margin-bottom: 0;
+  margin-top: 1em;
+  border-top: 1px solid black;
 }
 .site-footer {
   text-align: center;
@@ -750,6 +1023,9 @@ a:visited {
 .breadcrumb li::after {
   content: " » ";
 }
+.next-previous {
+  margin-right: 2em;
+}
 .next-previous .next,
 .next-previous .previous {
   width: 50%;
@@ -759,11 +1035,9 @@ a:visited {
   text-align: right;
 }
 .breadcrumb-wrap {
-  margin-bottom: 22px;
+  margin-bottom: 10px;
 }
 .breadcrumb-wrap ul {
-  margin: 0;
-  padding: 0;
   list-style-type: none;
 }
 .breadcrumb-wrap li {
@@ -772,21 +1046,388 @@ a:visited {
 .breadcrumb-wrap li::after {
   content: " » ";
 }
+.breadcrumb-list ul {
+  padding-left: 3.8%;
+}
 .sidebar {
-  width: 32%;
+  width: 15%;
   float: left;
+  margin-left: 3.8%;
   margin-bottom: 1em;
+  margin-top: 1em;
 }
 .has-sidebar {
   min-height: 15em;
 }
+.route-grid .main {
+  margin-left: 21.8%;
+}
 .article-block {
-  display: inline-block;
   width: 60%;
 }
 .right-block {
-  width: 23.5%;
+  width: 100%;
 }
+/**
+ * Typographic defaults.
+ */
+/**
+ * Headings
+ */
+/**
+ * Text elements
+ */
+/**
+ * Display source code.
+ */
+/**
+ * Lists
+ */
+/**
+ * Tables. Because of the need for padding on TH and TD, the vertical rhythm
+ * on table cells has to be 1.5*@magic-number.
+ */
+/**
+ * More typography elements
+ */
+/**
+ * Typographic font families to choose from.
+ */
+/**
+ * Default font-families
+ */
+/**
+ * Typographic mixins.
+ */
+/**
+ * Typographic sizes for horisontal rythm.
+ */
+/**
+ * Magic number for vertical rythm
+ * @magicNumber = @fontSizeBody * @lineHeight
+ */
+/* 16px - 100%/1.5 */
+/**
+ * Size and lineheight calculation for magicNumber 24
+ *
+ * 3em     * 16px   = 48 => line-height: 48    = 1
+ * 2.875em * 16px   = 46 => line-height: 48/44 = 1.0435
+ * 2.75em  * 16px   = 44 => line-height: 48/44 = 1.0909
+ * 2.625em * 16px   = 42 => line-height: 48/42 = 1.1429
+ * 2.5em   * 16px   = 40 => line-height: 48/40 = 1.2
+ * 2.375em * 16px   = 38 => line-height: 48/38 = 1.2632
+ * 2.25em  * 16px   = 36 => line-height: 48/36 = 1.3333
+ * 2.125em * 16px   = 34 => line-height: 48/34 = 1.4118
+ * 2em     * 16px   = 32 => line-height: 48/32 = 1.5
+ * 1.875em * 16px   = 30 => line-height: 48/30 = 1.6
+ * 1.75em  * 16px   = 28 => line-height: 48/28 = 1.7143
+ * 1.625em * 16px   = 26 => line-height: 48/26 = 1.8462
+ * 1.5em   * 16px   = 24 => line-height: 24    = 1
+ * 1.375em * 16px   = 22 => line-height: 24/22 = 1.0909
+ * 1.25em  * 16px   = 20 => line-height: 24/20 = 1.2
+ * 1.125em * 16px   = 18 => line-height: 24/18 = 1.3333
+ * 1em     * 16px   = 16 => line-height: 24/16 = 1.5
+ * 0.875em * 16px   = 14 => line-height: 24/14 = 1.7143
+ * 0.75em  * 16px   = 12 => line-height: 24/12 = 2
+ */
+/**
+ * Size and lineheight calculation for magicNumber 22
+ *
+ * 3em     * 16px   = 48 => line-height: 66/48 = 1.375
+ * 2.875em * 16px   = 46 => line-height: 66/46 = 1.4348
+ * 2.75em  * 16px   = 44 => line-height: 44    = 1
+ * 2.625em * 16px   = 42 => line-height: 44/42 = 1.0476
+ * 2.5em   * 16px   = 40 => line-height: 44/40 = 1.1
+ * 2.375em * 16px   = 38 => line-height: 44/38 = 1.1579
+ * 2.25em  * 16px   = 36 => line-height: 44/36 = 1.2222
+ * 2.125em * 16px   = 34 => line-height: 44/34 = 1.2941
+ * 2em     * 16px   = 32 => line-height: 44/32 = 1.375
+ * 1.875em * 16px   = 30 => line-height: 44/30 = 1.4667
+ * 1.75em  * 16px   = 28 => line-height: 44/28 = 1.5714
+ * 1.625em * 16px   = 26 => line-height: 44/26 = 1.6923
+ * 1.5em   * 16px   = 24 => line-height: 44/24 = 1.8333
+ * 1.375em * 16px   = 22 => line-height: 22    = 1
+ * 1.25em  * 16px   = 20 => line-height: 22/20 = 1.1
+ * 1.125em * 16px   = 18 => line-height: 22/18 = 1.2222
+ * 1em     * 16px   = 16 => line-height: 22/16 = 1.375
+ * 0.875em * 16px   = 14 => line-height: 22/14 = 1.5714
+ * 0.75em  * 16px   = 12 => line-height: 22/12 = 1.8333
+*/
+.column-b {
+  font: 100.01%/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.column-b h1,
+.column-b h2,
+.column-b h3,
+.column-b h4,
+.column-b h5,
+.column-b h6 {
+  font-family: MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;
+  margin-top: 56px;
+  margin-bottom: 24px;
+}
+.column-b h1 img,
+.column-b h2 img,
+.column-b h3 img,
+.column-b h4 img,
+.column-b h5 img,
+.column-b h6 img {
+  margin: 0;
+}
+.column-b h1 {
+  font-size: 2.375em;
+  line-height: 1.26315789;
+  font-weight: normal;
+  border-bottom: 1px solid #666;
+  margin-bottom: 23px;
+}
+.column-b h1 ~ h1,
+.column-b h1 ~ h2,
+.column-b h1 ~ h3,
+.column-b h1 ~ h4,
+.column-b h1 ~ h5,
+.column-b h1 ~ h6 {
+  margin-top: 24px;
+}
+.column-b h1 + h2 {
+  margin-top: 24px;
+}
+.column-b h2 {
+  font-size: 1.875em;
+  line-height: 1.6;
+  font-weight: normal;
+  margin-top: 48px;
+  margin-bottom: 23px;
+  border-bottom: 1px solid #999;
+}
+.column-b h2 + h3 {
+  margin-top: 24px;
+}
+.column-b h3 {
+  font-size: 1.375em;
+  line-height: 1.09090909;
+  font-weight: normal;
+}
+.column-b h4 {
+  font-size: 1.25em;
+  line-height: 1.2;
+  font-weight: normal;
+}
+.column-b h5 {
+  font-size: 1em;
+  line-height: 1.5;
+}
+.column-b h6 {
+  font-size: 0.875em;
+  line-height: 1.71428571;
+}
+.column-b p {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.column-b small,
+.column-b .small,
+.column-b .smaller {
+  font-size: 0.875em;
+}
+.column-b strong,
+.column-b b {
+  font-weight: bold;
+}
+.column-b mark {
+  color: #000;
+  background-color: #ffff99;
+}
+.column-b abbr[title],
+.column-b dfn[title] {
+  text-decoration: dotted underline;
+}
+.column-b em,
+.column-b i,
+.column-b dfn {
+  font-style: italic;
+}
+.column-b sub,
+.column-b sup {
+  font-size: 0.75em;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.column-b sup {
+  top: -0.5em;
+}
+.column-b sub {
+  bottom: -0.25em;
+}
+.column-b blockquote {
+  border-left: 4px solid #eee;
+  padding-left: 1em;
+  margin-left: 0;
+  margin-bottom: 24px;
+}
+.column-b pre,
+.column-b code,
+.column-b kbd,
+.column-b samp,
+.column-b .code {
+  font-size: 1.25em;
+  font-family: monospace;
+}
+.column-b code,
+.column-b samp {
+  border: 1px solid #ccc;
+}
+.column-b code {
+  background-color: #eee;
+}
+.column-b pre,
+.column-b div.code,
+.column-b pre code {
+  font-size: 1.04166667em;
+  line-height: 1.6;
+  white-space: pre;
+}
+.column-b pre {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.column-b pre code {
+  display: block;
+  overflow: auto;
+}
+.column-b div.code,
+.column-b pre code {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-top: 23px;
+  margin-bottom: 23px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 0.5em;
+  background-color: #eee;
+}
+.column-b ul,
+.column-b ol {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding-left: 1.5em;
+}
+.column-b ul p,
+.column-b ol p {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.column-b ul ul,
+.column-b ol ul,
+.column-b ul ol,
+.column-b ol ol {
+  margin: 0;
+}
+.column-b ul {
+  list-style-type: disc;
+}
+.column-b ol {
+  list-style-type: decimal;
+}
+.column-b dl {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.column-b dl.horizontal dt {
+  clear: left;
+  float: left;
+  width: 7em;
+}
+.column-b dl.horizontal dd {
+  margin-left: 8em;
+  display: block;
+}
+.column-b dd {
+  margin-left: 1.5em;
+}
+.column-b article table,
+.column-b .table,
+.column-b .table1,
+.column-b .table2 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.column-b table.full-width,
+.column-b article .table,
+.column-b .table,
+.column-b .table2 {
+  width: 100%;
+}
+.column-b article table,
+.column-b .table,
+.column-b .table2 {
+  border-collapse: collapse;
+  margin-top: 43.2px;
+}
+.column-b article table caption,
+.column-b .table caption,
+.column-b .table2 caption {
+  font-size: 0.875em;
+  line-height: 1.71428571;
+  text-align: left;
+  font-style: italic;
+}
+.column-b article table thead,
+.column-b .table thead,
+.column-b .table2 thead {
+  box-shadow: 0 1px 0 #aaa;
+}
+.column-b article table th,
+.column-b .table th,
+.column-b .table2 th {
+  vertical-align: bottom;
+  font-weight: bold;
+  text-align: left;
+}
+.column-b article table th,
+.column-b .table th,
+.column-b .table2 th,
+.column-b article table td,
+.column-b .table td,
+.column-b .table2 td {
+  padding: 12px;
+}
+.column-b article table tr,
+.column-b .table tr,
+.column-b .table2 tr {
+  box-shadow: 0 1px 0 #ccc;
+}
+.column-b article table tr:hover,
+.column-b .table tr:hover,
+.column-b .table2 tr:hover {
+  color: #000;
+  background-color: #f6f6f6;
+  box-shadow: 0 1px 0 #666;
+}
+.column-b table.striped tbody tr:nth-child(even) td,
+.column-b table.striped tbody tr.even td {
+  background-color: #fafafa;
+}
+.column-b hr {
+  position: relative;
+  top: -2px;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  margin-top: 24px;
+  margin-bottom: 36px -12px;
+}
+.column-b hr:after {
+  position: relative;
+  top: -0.7em;
+  left: 50%;
+  padding: 0 0.25em;
+  background-color: #fff;
+}
+/**
+ * Show horizontal grid.
+ */
 /** --------------------------------------------------------------
  *  header
  */
@@ -795,17 +1436,19 @@ a:visited {
   width: 100%;
   overflow: hidden;
 }
+.navbar2 {
+  margin-right: 36px;
+}
 .navbar2 li {
   background-color: white;
 }
 .navbar2 li a {
-  padding-right: 0;
   background-color: white;
   font-size: 0.8em;
 }
 .navbar2 {
   float: right;
-  width: 30%;
+  width: 50%;
 }
 .site-logo-text,
 .profile {
@@ -814,6 +1457,7 @@ a:visited {
 }
 .site-logo-text {
   font-size: 2em;
+  margin-left: 1.1em;
   margin-top: 0.3em;
 }
 .site-logo-text a {
@@ -826,7 +1470,7 @@ a:visited {
 }
 .rm-max .rm-small .rm-button {
   font-size: 1.5em;
-  margin-right: 72px;
+  margin-right: 20px;
   margin-top: 0;
 }
 .rm-mobile a {
@@ -856,7 +1500,12 @@ a:visited {
 img {
   max-width: 100%;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1060px) {
+  .navbar2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 940px) {
   .site-logo-text {
     width: 40%;
   }
@@ -866,9 +1515,7 @@ img {
   .profile {
     width: 10%;
   }
-}
-@media screen and (max-width: 750px) {
-  .sidebar {
+  .footer-column {
     width: 100%;
   }
 }
@@ -877,11 +1524,25 @@ img {
     width: 100%;
   }
 }
+@media screen and (max-width: 620px) {
+  .sidebar {
+    width: 100%;
+  }
+  .route-grid .main {
+    width: 100%;
+    margin-left: 0.5%;
+  }
+  .main {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 560px) {
   .site-logo-text {
     width: 90%;
   }
-  .navbar2 {
+}
+@media screen and (max-width: 470px) {
+  .article img {
     display: none;
   }
 }

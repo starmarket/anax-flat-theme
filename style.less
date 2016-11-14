@@ -11,22 +11,21 @@
 .site-header {
     height: 80px;
     width: 100%;
-    // margin: 1em;
     overflow:hidden;
-    // border-bottom: 1px solid #ddd;
-    // background-image:
-    //     linear-gradient(
-    //         #ddd, white
-    // );
-
 }
 
 
 .navbar2 {
+
+    margin-right: 36px;
+
     li {
         background-color: white;
+
         a {
-            padding-right: 0;
+
+            //padding-right: 0;
+            //padding-left: 0;
             background-color: white;
             font-size: 0.8em;
         }
@@ -36,7 +35,7 @@
 
 .navbar2 {
     float:right;
-    width:30%;
+    width:50%;
 }
 
 .site-logo-text,
@@ -47,6 +46,7 @@
 
 .site-logo-text {
     font-size: 2em;
+    margin-left: 1.1em;
     margin-top: 0.3em;
 
     a {
@@ -67,7 +67,7 @@
 // navbar max
 .rm-max .rm-small .rm-button {
     font-size: 1.5em;
-    margin-right: 72px;
+    margin-right: 20px;
     margin-top:0;
 }
 
@@ -120,7 +120,15 @@ img {
     max-width: 100%;
 }
 
-@media screen and (max-width: 900px) {
+
+@media screen and (max-width: 1060px) {
+    .navbar2 {
+        display: none;
+
+    }
+}
+
+@media screen and (max-width: 940px) {
     .site-logo-text {
      width: 40%;
     }
@@ -132,13 +140,11 @@ img {
     .profile {
      width: 10%;
     }
-}
-
-@media screen and (max-width: 750px) {
-    .sidebar {
-        width: 100%;
+    .footer-column {
+        width:100%;
     }
 }
+
 
 @media screen and (max-width: 700px) {
     .footer-column {
@@ -146,16 +152,31 @@ img {
     }
 }
 
+@media screen and (max-width: 620px) {
+    .sidebar {
+        width: 100%;
+    }
+    .route-grid .main {
+        width: 100%;
+        margin-left:0.5%;
+    }
+    .main {
+        width: 100%
+    }
+}
+
 @media screen and (max-width: 560px) {
     .site-logo-text {
      width: 90%;
     }
+}
 
-    .navbar2 {
+@media screen and (max-width:470px) {
+    .article img {
         display: none;
-
     }
 }
+
 
 
 /*

@@ -1,15 +1,41 @@
 // Site
-
-.default{
-    background-color: #ddd;
-    padding-bottom: 0;
-}
+//
+// .default{
+//     background-color: #ddd;
+//     padding-bottom: 0;
+// }
 
 body.route-grid .wrap-all {
     .showGrid();
 
 }
 
+body.route-typography .main {
+    .showHorizontalGrid();
+}
+
+// body .main {
+//     .showHorizontalGrid();
+// }
+
+// body .wrap-all{
+//     .showHorizontalGrid();
+// }
+
+
+body {
+    .font();
+    .typographyHeadings();
+    .typographyTextElements();
+    .typographyCodeElements();
+    .typographyListElements();
+    .typographyTableElements();
+    .typographyOtherElements();
+}
+
+.route-report .article {
+    min-height: 20em;
+}
 
 
 // .wrap-all {
@@ -20,12 +46,16 @@ body.route-grid .wrap-all {
 
 
 
-.row {
-    display: block;
-    max-width: 1000px;
+// .row {
+//     display: block;
+//     max-width: 1000px;
+//     margin: 0 auto;
+// }
+
+.wrap-all {
+    max-width: 960px;
     margin: 0 auto;
 }
-
 
 .main {
     margin:0;
@@ -34,23 +64,32 @@ body.route-grid .wrap-all {
 
 }
 
+
+.flash-wrap {
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
 .article {
-    margin:0;
-    paddin: 0;
+    margin: 3.7%;//2.4em;
+    min-height: 10em;
+    // margin:0;
+    // paddin: 0;
     img{
-        margin-right:-0.5em;
+
+        margin-top: 1em;
     }
 
 }
 
 
 
-.byline {
-    padding:0;
-    // img {
-    //
-    //     margin-right: 16px;
-    // }
+.byline p {
+    img {
+        margin-left: 2.1%;
+    }
 }
 
 
@@ -58,7 +97,7 @@ body.route-grid .wrap-all {
 .footer-column {
     width: 33%;
     display: inline-block;
-    margin: 0 auto;
+    //margin: 0 auto;
     text-align: center;
 }
 
@@ -70,13 +109,15 @@ body.route-grid .wrap-all {
 
 
 .inner-wrap-footer {
-    background-color: #ddd;
-    margin-bottom: 0;
+    margin-top: 1em;
+    border-top: 1px solid black;
+    // background-color: #ddd;
+    // margin-bottom: 0;
 }
 
-.outer-wrap-footer {
-    margin-bottom: 0;
-}
+// .outer-wrap-footer {
+//     margin-bottom: 0;
+// }
 
 .site-footer {
     text-align: center;
@@ -127,15 +168,15 @@ a:visited {
         float: right;
         text-align: right;
     }
+
+    margin-right: 2em;
 }
 
 .breadcrumb-wrap {
 
-    margin-bottom: 22px;
+    margin-bottom: 10px;
 
     ul {
-        margin: 0;
-        padding: 0;
         list-style-type: none;
     }
 
@@ -148,23 +189,34 @@ a:visited {
     }
 }
 
+.breadcrumb-list {
+    ul {
+        padding-left: 3.8%;
+    }
+}
+
 .sidebar {
     //background-color: blue;
-    width: 32%;
+    width: 15%;
     float: left;
+    margin-left: 3.8%;
     margin-bottom: 1em;
+    margin-top: 1em;
 }
 
 .has-sidebar {
     min-height: 15em;
 }
 
-.article-block {
-    display: inline-block;
-    width:60%;
 
+.route-grid .main {
+    margin-left:21.8%;
+}
+
+.article-block {
+    width:60%;
 }
 
 .right-block {
-    width:23.5%;
+    width:100%;
 }
