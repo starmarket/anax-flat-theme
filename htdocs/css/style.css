@@ -978,6 +978,7 @@ body hr:after {
 }
 .article img {
   margin-top: 1em;
+  margin-bottom: 1em;
 }
 .byline p img {
   margin-left: 2.1%;
