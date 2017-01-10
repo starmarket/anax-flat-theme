@@ -1,0 +1,73 @@
+@import url(band.less);
+
+
+// @accentColor: #0C29CC;
+@accentColor: #7F0006;
+
+
+body {
+    background: linear-gradient(#454837, black);
+    // background: linear-gradient(#26487F, black);
+  // background: url(../img/ocean.jpg) no-repeat center center fixed;
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
+}
+
+
+.wrap-all {
+    opacity: 1;
+    background-color: #FFFCF5;
+}
+
+
+.flash-wrap {
+    img {
+        border: none;
+        display: block;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        background: url(../img/thorns.png) no-repeat;
+        width: 950px; /* Width of new image */
+        height: 180px; /* Height of new image */
+        padding-left: 950px; /* Equal to width of new image */
+        margin-left: 5px;
+    }
+}
+
+
+h1, h2, h3, h4 {
+    font-family: @fontFamilyBand2 !important;
+}
+
+.navbar2 {
+    font-family: @fontFamilyBand2 !important;
+
+}
+
+p {
+    font-family: @fontFamilyBand21 !important;
+}
+
+
+.main {
+    .column(17) !important;
+    .push(1) !important;
+}
+
+
+.sidebar-left {
+    float: right;
+}
+
+h1,h2,h3,h4 {
+    text-shadow:none;
+}
+
+
+  @media screen and (max-width: 750px) {
+      .sidebar-left {
+          float: left;
+      }
+  }
